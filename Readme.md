@@ -187,6 +187,8 @@ git clone https://github.com/douglasabnovato/learnTECH.git
 
 - [x] Mudança de Cor do Site: amarelo, azul, cinza, laranja, preto, verde
 - [x] Seção de Depoimentos: Adicionar um slider (usando Swiper.js) com social proof de pacientes reais. 
+- [x] Modularização do CSS do projeto
+- [x] Responsividade
 
 🟡 Médio Prazo (Interatividade e Backend)
 
