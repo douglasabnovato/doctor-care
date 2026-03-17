@@ -4,8 +4,35 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>DoctorCare</title>
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./public/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./public/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./public/favicon-16x16.png"
+    />
+    <link rel="manifest" href="./public/site.webmanifest" />
 
-    <link rel="stylesheet" href="./style.css" />
+    <link
+      rel="stylesheet"
+      href="https://unpkg.com/swiper/swiper-bundle.min.css"
+    />
+    <link rel="stylesheet" href="./css/variables.css" />
+    <link rel="stylesheet" href="./css/main.css" />
+    <link rel="stylesheet" href="./css/navigation.css" />
+    <link rel="stylesheet" href="./css/sections.css" />
+    <link rel="stylesheet" href="./css/components.css" />
+    <link rel="stylesheet" href="./css/footer.css" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
@@ -174,7 +201,51 @@
         </button>
       </div>
     </nav>
-
+    <div id="color-picker">
+      <button
+        class="color-dot active"
+        data-hue="170"
+        data-image="assets/images/mulher-negra-com-moleton-verde.png"
+        aria-label="Mudar tema para Verde"
+        style="background-color: hsl(170, 100%, 26%)"
+      ></button>
+      <button
+        class="color-dot"
+        data-hue="210"
+        data-image="assets/images/mulher-negra-com-moleton-azul.png"
+        aria-label="Mudar tema para Azul"
+        style="background-color: hsl(210, 100%, 26%)"
+      ></button>
+      <button
+        class="color-dot"
+        data-hue="45"
+        data-image="assets/images/mulher-negra-com-moleton-amarelo.png"
+        aria-label="Mudar tema para Amarelo"
+        style="background-color: hsl(45, 100%, 26%)"
+      ></button>
+      <button
+        class="color-dot"
+        data-hue="25"
+        data-image="assets/images/mulher-negra-com-moleton-laranja.png"
+        aria-label="Mudar tema para Laranja"
+        style="background-color: hsl(25, 100%, 26%)"
+      ></button>
+      <button
+        class="color-dot"
+        data-hue="0"
+        data-image="assets/images/mulher-negra-com-moleton-cinza.png"
+        aria-label="Mudar tema para Cinza"
+        style="background-color: hsl(0, 0%, 50%)"
+      ></button>
+      <button
+        class="color-dot"
+        data-hue="0"
+        data-lightness="10%"
+        data-image="assets/images/mulher-negra-com-moleton-preta.png"
+        aria-label="Mudar tema para Preto"
+        style="background-color: #000"
+      ></button>
+    </div>
     <section id="home">
       <div class="wrapper">
         <div class="col-a">
@@ -209,8 +280,9 @@
 
         <div class="col-b">
           <img
-            src="./assets/images/mulher-negra-com-moleton-verde-com-as-duas-maos-no-peito.png"
-            alt="Mulher negra vestindo moletom verde com as duas mãos no peito e sorrindo"
+            id="hero-image"
+            src="./assets/images/mulher-negra-com-moleton-verde.png"
+            alt="Mulher negra vestindo moletom verde"
           />
         </div>
 
@@ -426,7 +498,121 @@
         </div>
       </div>
     </section>
+    <section id="testimonials">
+      <div class="wrapper">
+        <header>
+          <h4>Depoimentos</h4>
+          <h2>O que dizem nossos pacientes</h2>
+        </header>
 
+        <div class="swiper mySwiper">
+          <div class="swiper-wrapper">
+            <div class="swiper-slide">
+              <div class="card">
+                <p>
+                  "O atendimento na clínica mudou minha percepção sobre saúde.
+                  Equipe extremamente profissional e atenciosa desde a
+                  recepção."
+                </p>
+                <div class="user">
+                  <img
+                    src="https://randomuser.me/api/portraits/women/44.jpg"
+                    alt="Foto de Jane Doe"
+                  />
+                  <cite>Jane Doe</cite>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="card">
+                <p>
+                  "Incrível como o plano de tratamento foi personalizado para as
+                  minhas necessidades. Sinto uma melhora significativa na minha
+                  qualidade de vida."
+                </p>
+                <div class="user">
+                  <img
+                    src="https://randomuser.me/api/portraits/men/32.jpg"
+                    alt="Foto de Carlos Silva"
+                  />
+                  <cite>Carlos Silva</cite>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="card">
+                <p>
+                  "A infraestrutura é moderna e acolhedora. Me senti muito
+                  seguro durante todo o procedimento técnico. Recomendo para
+                  toda a minha família."
+                </p>
+                <div class="user">
+                  <img
+                    src="https://randomuser.me/api/portraits/women/68.jpg"
+                    alt="Foto de Maria Oliveira"
+                  />
+                  <cite>Maria Oliveira</cite>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="card">
+                <p>
+                  "Pontualidade e clareza nas explicações. É difícil encontrar
+                  profissionais tão dedicados e que realmente ouvem o que o
+                  paciente tem a dizer."
+                </p>
+                <div class="user">
+                  <img
+                    src="https://randomuser.me/api/portraits/men/45.jpg"
+                    alt="Foto de Ricardo Santos"
+                  />
+                  <cite>Ricardo Santos</cite>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="card">
+                <p>
+                  "O acompanhamento pós-consulta foi o que mais me surpreendeu.
+                  Eles realmente se importam com a nossa evolução e bem-estar
+                  contínuo."
+                </p>
+                <div class="user">
+                  <img
+                    src="https://randomuser.me/api/portraits/women/22.jpg"
+                    alt="Foto de Ana Beatriz"
+                  />
+                  <cite>Ana Beatriz</cite>
+                </div>
+              </div>
+            </div>
+
+            <div class="swiper-slide">
+              <div class="card">
+                <p>
+                  "Um ambiente que transmite paz e confiança. Os resultados do
+                  tratamento superaram minhas expectativas em pouco tempo de
+                  acompanhamento."
+                </p>
+                <div class="user">
+                  <img
+                    src="https://randomuser.me/api/portraits/men/12.jpg"
+                    alt="Foto de Lucas Pereira"
+                  />
+                  <cite>Lucas Pereira</cite>
+                </div>
+              </div>
+            </div>
+          </div>
+          <div class="swiper-pagination"></div>
+        </div>
+      </div>
+    </section>
     <section id="contact">
       <div class="wrapper">
         <div class="col-a">
@@ -637,7 +823,7 @@
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
       >
-        <circle cx="20" cy="20" r="20" fill="#00856F" />
+        <circle cx="20" cy="20" r="20" fill="currentColor" />
         <path
           d="M20 27V13"
           stroke="white"
@@ -657,6 +843,8 @@
 
     <!-- ScrollReaveal Lib -->
     <script src="https://unpkg.com/scrollreveal"></script>
+    <!-- Swiper Lib -->
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
     <script src="./main.js"></script>
   </body>
 </html>
