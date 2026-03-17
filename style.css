@@ -7,12 +7,13 @@
 
 /*=== GERAL =================================*/
 :root {
-  /* Ajuste para o Verde Médico Original */
   --hue: 170;
+  --sat: 100%;
+  --light: 26%;
 
   /* HSL Variáveis */
-  --primary-color: hsl(var(--hue), 100%, 26%);
-  --brand-dark: hsl(var(--hue), 100%, 14%);
+  --primary-color: hsl(var(--hue), var(--sat), var(--light));
+  --brand-dark: hsl(var(--hue), var(--sat), calc(var(--light) - 12%));
   --brand-light: hsl(calc(var(--hue) - 22), 23%, 89%);
   --brand-light-2: hsl(calc(var(--hue) + 10), 14%, 97%);
 
@@ -220,6 +221,17 @@ nav .close-menu {
 /*=== MENU-EXPANDED =================================*/
 body.menu-expanded {
   overflow: hidden;
+}
+
+/* Garante que o seletor de cores ignore o visibility: hidden do menu mobile */
+body.menu-expanded #color-picker {
+  visibility: visible;
+  z-index: 101; /* Fica acima do overlay do menu */
+}
+
+/* Suaviza a troca da imagem do médico */
+#hero-image {
+  transition: opacity 0.3s ease-in-out;
 }
 
 body.menu-expanded > :not(nav) {
@@ -508,6 +520,44 @@ footer .social-links {
   fill: transparent;
   stroke: white;
   stroke-width: 2;
+}
+
+#color-picker {
+  position: fixed;
+  top: calc(var(--nav-height) + 2rem);
+  left: 2rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1.2rem;
+  z-index: 99; /* Garante que fique acima de outros elementos, mas abaixo do menu se necessário */
+}
+
+.color-dot {
+  width: 2.8rem;
+  height: 2.8rem;
+  border-radius: 50%;
+  border: 2px solid white;
+  cursor: pointer;
+  box-shadow: 0 4px 6px rgba(0, 0, 0, 0.1);
+  transition:
+    transform 0.2s,
+    box-shadow 0.2s;
+}
+
+.color-dot:hover {
+  transform: scale(1.15);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.15);
+}
+
+.color-dot.active {
+  border: 3px solid var(--primary-color);
+  transform: scale(1.2);
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.2);
+}
+
+/* Estilo específico para a bola preta no seletor para ela não sumir */
+button[aria-label="Mudar tema para Preto"] {
+  background-color: #1a1a1a;
 }
 
 /*=== RESPONSIVO =================================*/

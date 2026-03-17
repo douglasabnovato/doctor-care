@@ -4,10 +4,24 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>DoctorCare</title>
-<link rel="apple-touch-icon" sizes="180x180" href="./public/apple-touch-icon.png">
-<link rel="icon" type="image/png" sizes="32x32" href="./public/favicon-32x32.png">
-<link rel="icon" type="image/png" sizes="16x16" href="./public/favicon-16x16.png">
-<link rel="manifest" href="./public/site.webmanifest">
+    <link
+      rel="apple-touch-icon"
+      sizes="180x180"
+      href="./public/apple-touch-icon.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./public/favicon-32x32.png"
+    />
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="16x16"
+      href="./public/favicon-16x16.png"
+    />
+    <link rel="manifest" href="./public/site.webmanifest" />
     <link rel="stylesheet" href="./style.css" />
 
     <link rel="preconnect" href="https://fonts.googleapis.com" />
@@ -177,7 +191,51 @@
         </button>
       </div>
     </nav>
-
+    <div id="color-picker">
+      <button
+        class="color-dot active"
+        data-hue="170"
+        data-image="assets/images/mulher-negra-com-moleton-verde.png"
+        aria-label="Mudar tema para Verde"
+        style="background-color: hsl(170, 100%, 26%)"
+      ></button>
+      <button
+        class="color-dot"
+        data-hue="210"
+        data-image="assets/images/mulher-negra-com-moleton-azul.png"
+        aria-label="Mudar tema para Azul"
+        style="background-color: hsl(210, 100%, 26%)"
+      ></button>
+      <button
+        class="color-dot"
+        data-hue="45"
+        data-image="assets/images/mulher-negra-com-moleton-amarelo.png"
+        aria-label="Mudar tema para Amarelo"
+        style="background-color: hsl(45, 100%, 26%)"
+      ></button>
+      <button
+        class="color-dot"
+        data-hue="25"
+        data-image="assets/images/mulher-negra-com-moleton-laranja.png"
+        aria-label="Mudar tema para Laranja"
+        style="background-color: hsl(25, 100%, 26%)"
+      ></button>
+      <button
+        class="color-dot"
+        data-hue="0"
+        data-image="assets/images/mulher-negra-com-moleton-cinza.png"
+        aria-label="Mudar tema para Cinza"
+        style="background-color: hsl(0, 0%, 50%)"
+      ></button>
+      <button
+        class="color-dot"
+        data-hue="0"
+        data-lightness="10%"
+        data-image="assets/images/mulher-negra-com-moleton-preta.png"
+        aria-label="Mudar tema para Preto"
+        style="background-color: #000"
+      ></button>
+    </div>
     <section id="home">
       <div class="wrapper">
         <div class="col-a">
@@ -212,8 +270,9 @@
 
         <div class="col-b">
           <img
-            src="./assets/images/mulher-negra-com-moleton-verde-com-as-duas-maos-no-peito.png"
-            alt="Mulher negra vestindo moletom verde com as duas mãos no peito e sorrindo"
+            id="hero-image"
+            src="./assets/images/mulher-negra-com-moleton-verde.png"
+            alt="Mulher negra vestindo moletom verde"
           />
         </div>
 

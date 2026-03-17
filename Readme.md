@@ -147,4 +147,25 @@ git clone https://github.com/douglasabnovato/learnTECH.git
 
 ### 2. Abra o arquivo index.html no seu navegador ou utilize a extensão Live Server no VS Code.
 
+---
+ 
+### 💻 Próximos passos
+
+🟢 Curto Prazo (Refinamentos de UI/UX)
+
+- [x] Mudança de Cor do Site: amarelo, azul, cinza, laranja, preto, verde
+- [ ] Seção de Depoimentos: Adicionar um slider (usando Swiper.js) com social proof de pacientes reais.
+- [ ] Modo Escuro (Dark Mode): Implementar um seletor de tema aproveitando as variáveis HSL já existentes.
+- [ ] Página de Erro 404 Personalizada: Criar uma página amigável para links quebrados.
+
+🟡 Médio Prazo (Interatividade e Backend)
+
+- [ ] Formulário de Contato Real: Integrar com o Formspree ou uma API de e-mail para que as mensagens cheguem à caixa de entrada da clínica.
+- [ ] Sistema de Agendamento: Criar um modal de calendário para que o usuário escolha o dia e horário antes de ser redirecionado ao WhatsApp.
+- [ ] Blog/Artigos: Desenvolver uma seção de conteúdos de saúde para melhorar o SEO da página.
+
+🔴 Longo Prazo (Arquitetura e Escala) 
+  
+- [ ] Integração com Google Maps API: Adicionar um mapa interativo real na seção de contato.
+
 Feito com ❤️ por Douglas A B Novato 👋🏽
