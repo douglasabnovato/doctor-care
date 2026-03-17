@@ -119,21 +119,53 @@ ScrollReveal (Biblioteca externa)
 
 ---
  
-### 💻 Estrutura de Pastas
+### 📂 Estrutura de Pastas: DOCTOR-CARE
 
-```markdown
-DOCTORCARE (Pasta Raiz)
-├── .github/ (Configurações de CI/CD ou templates do GitHub)
-├── assets/ (Pasta de recursos estáticos)
-│ ├── doutor-feliz-segurando... (Imagem)
-│ ├── homem-negro-com-m... (Imagem)
-│ ├── Logo.svg (Logotipo em vetor)
-│ └── mulher-negra-com-m... (Imagem)
-├── index.html (Arquivo principal de marcação)
-├── main.js (Arquivo de lógica e interatividade)
-├── Readme.md (Documentação do projeto)
-└── style.css (Arquivo de estilização)
-```
+#### 📁 .github/
+
+Contém configurações específicas do GitHub (como fluxos de automação ou templates).
+
+#### 📁 assets \ images/
+
+Centraliza todos os recursos visuais do projeto. Notei que você já salvou as variações de imagem para a troca de temas:
+
+- doutor-feliz-...png (Imagem padrão)
+
+- homem-negro-...png
+
+- mulher-negra-com-moletom-[cor].png (Verde, Preta, Laranja, Cinza, Azul, Amarelo).
+
+#### 📁 css/
+
+Aqui está a modularização que acabamos de fazer:
+
+- **components.css**: Estilos de Swiper, Botões flutuantes e Color Picker.
+
+- **footer.css**: Contato e Rodapé.
+
+- **main.css**: Reset, tipografia global e utilitários.
+
+- **navigation.css**: Header e Menu (Mobile/Desktop).
+
+- **sections.css**: Home, Services, About e Testimonials.
+
+- **variables.css**: Definições de cores HSL e variáveis de root.
+
+#### 📁 public/
+
+- Pasta para arquivos estáticos que não mudam (como o favicon ou o site.webmanifest).
+
+#### 📄 index.html
+
+- O arquivo principal onde você deve garantir que todos os links de CSS na <head> sigam a ordem que discutimos.
+
+#### 📄 main.js
+
+- Contém toda a lógica de scroll, Swiper e a engine de troca de cores.
+
+#### 📄 Readme.md
+
+- Documentação do projeto.
 
 ---
 
@@ -154,9 +186,7 @@ git clone https://github.com/douglasabnovato/learnTECH.git
 🟢 Curto Prazo (Refinamentos de UI/UX)
 
 - [x] Mudança de Cor do Site: amarelo, azul, cinza, laranja, preto, verde
-- [ ] Seção de Depoimentos: Adicionar um slider (usando Swiper.js) com social proof de pacientes reais.
-- [ ] Modo Escuro (Dark Mode): Implementar um seletor de tema aproveitando as variáveis HSL já existentes.
-- [ ] Página de Erro 404 Personalizada: Criar uma página amigável para links quebrados.
+- [x] Seção de Depoimentos: Adicionar um slider (usando Swiper.js) com social proof de pacientes reais. 
 
 🟡 Médio Prazo (Interatividade e Backend)
 
