@@ -2,6 +2,25 @@
 	🚧 Doctor Care 🚀
 </h3> 
 
+### 💻 Estrutura de Pastas
+
+````markdown
+DOCTORCARE (Pasta Raiz)
+├── .github/          (Configurações de CI/CD ou templates do GitHub)
+├── assets/           (Pasta de recursos estáticos)
+│   ├── doutor-feliz-segurando... (Imagem)
+│   ├── homem-negro-com-m...      (Imagem)
+│   ├── Logo.svg                  (Logotipo em vetor)
+│   └── mulher-negra-com-m...     (Imagem)
+├── index.html        (Arquivo principal de marcação)
+├── main.js           (Arquivo de lógica e interatividade)
+├── Readme.md         (Documentação do projeto)
+└── style.css         (Arquivo de estilização)
+````
+
+---
+
+
 <h1 align="center">
     <img alt="Um site para assistência médica" title="#DoctorCare" src="./.github/template-1.jpg" />
 </h1>
